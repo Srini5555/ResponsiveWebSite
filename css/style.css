@@ -2,6 +2,10 @@
 
 :root {
     --primary-color:#87bdc4;
+    --secondary-color:#233440;
+    --dark-color: #0a4272;
+    --light-color:#f4f4f4;
+
 }
 
 * {
@@ -14,7 +18,7 @@ body {
     font-family: 'Lato','sans-serif';
     color:#333;
     lineheight:1.6;
-    background-color: #edf2f2;
+    
 
 }
 
@@ -93,7 +97,7 @@ img {
 }
 
 .showcase::before,.showcase::after {
-    background-color: #edf2f2;
+    background-color: white;
     content:'';
     height:100px;
     bottom:-70px;
@@ -158,6 +162,8 @@ img {
     transform:scale(0.98);
 }
 
+
+
 /* Stats */
 .stats {
     padding-top: 100px;
@@ -181,8 +187,7 @@ img {
 
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-
-    
+  
 }
 
 .cli .grid > *:first-child {
@@ -190,3 +195,27 @@ img {
     grid-row :1 /Span 2;
 }
 
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+.languages .flex 
+{
+    flex-wrap:wrap;
+}
+.languages .card 
+{
+    text-center:center;
+    margin:18px 10px 40px;
+    transition: transform 0.2s ease-in;
+
+}
+
+.languages .card .h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
